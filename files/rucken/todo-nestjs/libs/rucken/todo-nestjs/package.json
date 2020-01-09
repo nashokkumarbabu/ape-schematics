@@ -1,0 +1,63 @@
+{
+  "name": "@rucken/todo-nestjs",
+  "version": "4.1.4",
+  "engines": {
+    "node": ">=11",
+    "npm": ">=6.5.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "EndyKaufman",
+    "email": "admin@site15.ru"
+  },
+  "description": "Basic entities, services and controllers for todo application on NestJS REST backend",
+  "bugs": {
+    "url": "https://github.com/rucken/todo-nestjs/issues"
+  },
+  "homepage": "https://github.com/rucken/todo-nestjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rucken/todo-nestjs.git"
+  },
+  "keywords": [
+    "todo",
+    "issuses",
+    "nestjs",
+    "backend",
+    "projects",
+    "tasks",
+    "status",
+    "node",
+    "nodejs",
+    "angular",
+    "crud",
+    "rest",
+    "nest",
+    "rucken",
+    "nrwl",
+    "nx",
+    "angular",
+    "schematics",
+    "ngx"
+  ],
+  "maintainers": [
+    {
+      "name": "EndyKaufman",
+      "email": "admin@site15.ru"
+    }
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "@nestjs/common": "6.1.1",
+    "@nestjs/core": "6.1.1",
+    "@nestjs/passport": "6.0.0",
+    "@nestjs/swagger": "3.0.2",
+    "@nestjs/typeorm": "6.1.0",
+    "class-transformer": "0.2.0",
+    "class-validator": "0.9.1",
+    "node-django-hashers": "1.1.6",
+    "highlight.js": "9.15.6",
+    "@rucken/core-nestjs": "1.0.12"
+  }
+}

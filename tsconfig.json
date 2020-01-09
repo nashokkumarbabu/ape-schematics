@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": "tsconfig",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "rootDir": "src/",
+    "sourceMap": true,
+    "target": "es6",
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/**/files/**/*",
+    "fixtures/**/files/**/*",
+    "files/**/*"
+  ],
+  "baseUrl": "."
+}
