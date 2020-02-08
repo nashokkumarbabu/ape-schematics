@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsApeAddon",
+  "title": "Ape Addon Options Schema",
+  "type": "object",
+  "properties": {
+    "addon": {
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "type": "string",
+      "enum": ["seeding", "documentation", "templates"],
+      "x-prompt": "select addon type:"
+    },
+    "nodeModules": {
+      "type": "boolean",
+      "default": true,
+      "x-prompt": "Would you install node modules?"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "SchematicsNestApplication",
+    "title": "Nest Application Options Schema",
+    "type": "object",
+    "properties": {
+        "projectName": {
+            "type": "string",
+            "description": "The name of the application.",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt": "What name of your existing  project?"
+        },
+        "type": {
+            "enum": [
+                "mern",
+                "mean"
+            ],
+            "description": "The type of the application.",
+            "x-prompt": "What type of your existing  project?"
+        },
+        "packageManager": {
+            "enum": [
+                "npm",
+                "yarn"
+            ],
+            "description": "The type of the package manager.",
+            "x-prompt": "What is your package manager?"
+        },
+        "modelDir": {
+            "type": "string",
+            "description": "Path to Model Directory.",
+            "default":"",
+            "x-prompt": "Path to Model Directory"
+        },
+        "appDir": {
+            "type": "string",
+            "description": "Path to App Directory.",
+            "default":"",
+            "x-prompt": "Path to App Directory"
+        },
+        "seeding": {
+            "type": "boolean",
+            "description": "Data seeding into Database.",
+            "default": false
+        },
+        "documentation": {
+            "type": "boolean",
+            "description": "Documentation for the project.",
+            "default": false
+        },
+        "openapi":{
+            "type":"boolean",
+            "description": "OpenAPI template",
+            "default": true
+        }
+    },
+    "required": [
+        "projectName",
+        "type",
+        "packageManager"
+    ]
+}

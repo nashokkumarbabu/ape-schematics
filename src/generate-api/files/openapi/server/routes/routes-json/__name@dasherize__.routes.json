@@ -1,0 +1,11 @@
+{
+    <% let c=0,n=routes.length %>
+    <% routes.forEach(i=>{ %> 
+        <%c=c+1%>
+         "<%=i['x-ape-route']%>":{
+           " <%=i['x-ape-httpVerb']%>":{
+                "route":"../apis/<%=i['x-api-name']%>/<%=i['x-api-name']%>.controller.js:<%=i['x-ape-operation']%>"
+            }
+         }<% let com= c===n?'':',' %><%=com%>
+    <%})%>
+}

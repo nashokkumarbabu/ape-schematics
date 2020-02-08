@@ -1,0 +1,29 @@
+{
+  "GLOBAL": {
+    "baseUrl": "/user",
+    "controller": "../apis/user/user.controller.js"
+  },
+  "/getallusers": {
+    "GET": {
+      "route": "../apis/user/user.controller.js:getallusersController"
+    }
+  },
+  "/createuser": {
+    "POST": {
+      "route": "../apis/user/user.controller.js:createuserController",
+      "policy":["../policy/validators/user.validator.js:userValidator"]
+    }
+  },
+  "/updateuser": {
+    "POST": {
+      "route": "../apis/user/user.controller.js:updateuserController",
+      "policy":["../policy/validators/user.validator.js:userValidator"]
+    }
+  },
+  "/deleteuser": {
+    "POST": {
+      "route": "../apis/user/user.controller.js:deleteuserController",
+      "policy":["../policy/validators/user.validator.js:userDelValidator"]
+    }
+  }
+}

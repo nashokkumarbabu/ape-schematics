@@ -1,3 +1,0 @@
-import { <%=classify(name)%>Dto } from './<%=name%>.dto';
-
-export class In<%=classify(name)%>Dto extends <%=classify(name)%>Dto {}

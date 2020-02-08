@@ -1,0 +1,31 @@
+{
+  "GLOBAL": {
+    "baseUrl": "/product",
+    "controller": "../apis/product/product.controller.js"
+  },
+  "/getallproducts": {
+    "GET": {
+      "route": "../apis/product/product.controller.js:getallproducts"
+    }
+  },
+  "/createproduct": {
+    "POST": {
+      "route": "../apis/product/product.controller.js:createproduct",
+      "policy": ["../policy/validators/product.validator.js:productValidator"]
+    }
+  },
+  "/updateproduct": {
+    "POST": {
+      "route": "../apis/product/product.controller.js:updateproduct",
+      "policy": ["../policy/validators/product.validator.js:productValidator"]
+    }
+  },
+  "/deleteproduct": {
+    "POST": {
+      "route": "../apis/product/product.controller.js:deleteproduct",
+      "policy": [
+        "../policy/validators/product.validator.js:productDelValidator"
+      ]
+    }
+  }
+}

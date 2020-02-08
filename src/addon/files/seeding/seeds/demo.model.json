@@ -1,0 +1,9 @@
+{
+    "collectionName": "demo",
+    "seedCount": 10,
+    "seedingModel": {
+      "first_name": "@faker.name.firstName()",
+      "last_name": "@faker.name.lastName()"      
+    }
+  }
+  
